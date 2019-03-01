@@ -1,0 +1,3 @@
+2017-08-26 22:49:04--更新会员卡信息－查询卡号信息--SQL=select count(*) from base_ucard where user_card = '8875801220035040',Err=
+2017-08-26 22:49:29--更新会员卡信息－查询卡号信息--SQL=select count(*) from base_ucard where user_card = '8875801220035040',Err=
+2017-08-26 22:57:05--更新会员卡信息－查询卡号信息--SQL=select count(*) from base_ucard where user_card = '8875801220035040',Err=该会员卡号已存在，跳过录入下一张会员卡！

@@ -1,0 +1,7 @@
+2018-12-09 11:25:00--HTTP--Send={"txnId":"W505","tellerNo":"","linkMan":"0000000","pan":"3885230008800002","pinData":"","sign":"3ba9e08c38eab28bd9304a8324c452cac49992b4417edbc323429fd697342d70"}
+2018-12-09 11:25:01--HTTP--Recv={"sign":"3ba9e08c38eab28bd9304a8324c452cac49992b4417edbc323429fd697342d70","pinData":"","linkMan":"0000000","rcDetail":"账户类型不能为空","tellerNo":"","rc":"W012","txnId":"W505","pan":"3885230008800002"}
+2018-12-09 15:53:16--刷卡查询商品交易明细信息--SQL=select a.STORE_ID,CARD_TYPE,STORE_NAME from mng_card a,base_store b where a.STORE_ID=b.STORE_ID and STORE_CARD = '',Err=系统中无此卡号
+2018-12-09 17:05:58--刷卡查询商品交易明细信息--SQL=select a.STORE_ID,CARD_TYPE,STORE_NAME from mng_card a,base_store b where a.STORE_ID=b.STORE_ID and STORE_CARD = '',Err=系统中无此卡号
+2018-12-22 22:19:49--登录--SQL=select user_pwd,user_id,USER_APP,USER_NAME,USER_STAT from sys_users where user_login='xgc',Err=该帐号已停用，请重新登录
+2018-12-22 22:29:45--登录--SQL=select user_pwd,user_id,USER_APP,USER_NAME,USER_STAT from sys_users where user_login='xgc',Err=该帐号已停用，请重新登录
+2018-12-30 12:59:34--查询卖方卡信息--SQL=select STORE_ID,CARD_TYPE,STORE_NAME from mng_card where STORE_PERSON like '%柳%' order by store_ID,Err=Mysql.ReadData ErrMsg=Unknown column 'STORE_NAME' in 'field list'

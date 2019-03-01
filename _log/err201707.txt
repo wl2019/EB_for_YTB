@@ -1,0 +1,12 @@
+2017-07-12 16:04:42--人员权限管理--SQL=编号2-姓名aa-权限11011111111111111110,OK
+2017-07-12 16:04:50--人员权限管理--SQL=编号2-姓名aa-权限11111111111111111110,OK
+2017-07-13 14:49:26--登录--SQL=select user_pwd,user_id,USER_APP from sys_users where user_login='k',Err=没有用户信息
+2017-07-13 16:18:08--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='10001',Err=已定义该商品的快捷键
+2017-07-13 16:18:11--定义快捷键－保存商品快捷键的信息--SQL=NSERT INTO base_keys(USER_ID,KEY_NAME,KEY_TYPE,FUNC_NAME) VALUES (0,'L08',2,'10001'),Err=Mysql.WriteData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NSERT INTO base_keys(USER_ID,KEY_NAME,KEY_TYPE,FUNC_NAME) VALUES (0,'L08',2,'100' at line 1
+2017-07-13 16:18:29--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='10001',Err=已定义该商品的快捷键
+2017-07-13 16:22:49--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='10002',Err=已定义该商品的快捷键
+2017-07-13 16:27:14--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='10001',Err=已定义该商品的快捷键
+2017-07-13 16:27:26--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='20001',Err=已定义该商品的快捷键
+2017-07-13 16:35:58--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='10001',Err=已定义该商品的快捷键
+2017-07-13 16:36:12--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='10001',Err=已定义该商品的快捷键
+2017-07-13 16:36:28--定义快捷键－查找商品快捷键的信息--SQL=select * from base_keys where func_name='40001',Err=已定义该商品的快捷键

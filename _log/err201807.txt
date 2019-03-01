@@ -1,0 +1,9 @@
+2018-07-02 09:48:33--卖方基本信息－修改--SQL=编号30-卖方名郑四,OK
+2018-07-06 12:52:40--定义快捷键－读出所有的商品名称的信息--SQL=select prod_id,prod_name from base_prod where PROD_LEVEL=1 order by prod_id,Err=没有商品明细
+2018-07-06 13:20:57--定义快捷键－读出所有的商品名称的信息--SQL=select prod_id,prod_name from base_prod where PROD_LEVEL=1 order by prod_id,Err=没有商品明细
+2018-07-06 13:22:49--定义快捷键－读出所有的商品名称的信息--SQL=select prod_id,prod_name from base_prod where PROD_LEVEL=1 order by prod_id,Err=没有商品明细
+2018-07-06 13:25:45--定义快捷键－读出所有的商品名称的信息--SQL=select prod_id,prod_name from base_prod where PROD_LEVEL=1 order by prod_id,Err=没有商品明细
+2018-07-06 15:44:50--商品基本信息－新增--SQL=INSERT INTO base_prod(PROD_ID,PROD_NAME,PROD_LEVEL,PROD_ORIGIN,PROD_RMRK,PARENT_ID) VALUES(1,'草鱼',1,'','',1),Err=Mysql.WriteData ErrMsg=Duplicate entry '1' for key 'PRIMARY'
+2018-07-06 17:18:37--定义快捷键－读出所有的商品快捷键的信息--SQL=select KEY_NAME, PROD_ID, PROD_NAME from base_keys a, base_prod b WHERE KEY_TYPE = 2 AND a.FUNC_NAME = b.PROD_ID AND PROD_LEVEL = 1 order by key_name,Err=没有快捷键信息
+2018-07-06 17:20:50--定义快捷键－读出所有的商品快捷键的信息--SQL=select KEY_NAME, PROD_ID, PROD_NAME from base_keys a, base_prod b WHERE KEY_TYPE = 2 AND a.FUNC_NAME = b.PROD_ID AND PROD_LEVEL = 1 order by key_name,Err=没有快捷键信息
+2018-07-06 17:22:04--定义快捷键－读出所有的商品快捷键的信息--SQL=select KEY_NAME, PROD_ID, PROD_NAME from base_keys a, base_prod b WHERE KEY_TYPE = 2 AND a.FUNC_NAME = b.PROD_ID AND PROD_LEVEL = 1 order by key_name,Err=没有快捷键信息

@@ -1,0 +1,19 @@
+2017-05-19 11:53:36--商品分类信息－删除--SQL=selete count(*) from base_prod where parent_id=1,Err=Mysql.ReadData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selete count(*) from base_prod where parent_id=1' at line 1
+2017-05-19 11:55:42--商品分类信息－删除--SQL=delete * from base_prod where prod_id=0,Err=Mysql.WriteData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from base_prod where prod_id=0' at line 1
+2017-05-19 12:09:12--商品分类信息－新增--SQL=INSERT INTO base_prod(PROD_ID,PROD_NAME,PROD_LEVEL) VALUES(0,'所有商品',0),Err=
+2017-05-19 12:11:40--商品分类信息－删除--SQL=delete from base_prod where prod_id=4,Err=
+2017-05-19 12:24:16--商品分类信息－新增--SQL=INSERT INTO base_prod(PROD_ID,PROD_NAME,PROD_LEVEL) VALUES(4,'fgd',0),OK
+2017-05-19 21:24:49--商品分类信息－新增--SQL=INSERT INTO base_prod(PROD_ID,PROD_NAME,PROD_LEVEL) VALUES(4,'df',0),OK
+2017-05-19 21:26:14--商品分类信息－新增--SQL=INSERT INTO base_prod(PROD_ID,PROD_NAME,PROD_LEVEL) VALUES(4,'d',0),OK
+2017-05-19 21:26:29--商品分类信息－修改--SQL=UPDATE base_prod SET PROD_NAME='test',PROD_RMRK = '' WHERE PROD_ID=4,OK
+2017-05-19 22:14:55--商品基本信息－新增--SQL=INSERT INTO base_prod(PROD_ID,PROD_NAME,PROD_LEVEL,PROD_ORIGIN,PROD_RMRK,PARENT_ID) VALUES(10003,'sd',1,'ds','',2),OK
+2017-05-19 22:15:34--商品基本信息－修改--SQL=UPDATE base_prod SET PROD_NAME='石斑鱼',PROD_RMRK = '',PROD_ORIGIN = '国产',PARENT_ID = 2 WHERE PROD_ID=10002,OK
+2017-05-19 22:15:49--商品基本信息－修改--SQL=UPDATE base_prod SET PROD_NAME='石斑鱼',PROD_RMRK = '',PROD_ORIGIN = '国产',PARENT_ID = 1 WHERE PROD_ID=10002,OK
+2017-05-23 19:39:44--商品收费信息－删除--SQL=select prod_level from base_prod where prod_id=2,Err=
+2017-05-24 11:53:19--商品收费信息－新增--SQL=INSERT INTO mng_rate (PROD_ID,RATE_TYPE,BGN_TIME,END_TIME,RATE,RATE_VALID,ADD_DT,ADD_ID,RMRK) VALUES (2,1,'2017/5/21 0:00:00','2018/5/24 0:00:00',5,'Y',curtime(),1,''),OK
+2017-05-24 12:53:02--商品收费信息－修改--SQL=UPDATE mng_rate SET BGN_TIME='2017/6/1 0:00:00',END_TIME = '2018/5/24 0:00:00',RATE = 10,CHG_DT = curtime(),CHG_ID = 1,RMRK = '' where prod_id=10001 and rate_type=2,OK
+2017-05-24 12:56:01--商品收费信息－修改--SQL=UPDATE mng_rate SET BGN_TIME='2017/6/1 0:00:00',END_TIME = '2018/5/24 0:00:00',RATE = 5,CHG_DT = curtime(),CHG_ID = 1,RMRK = '' where prod_id=10001 and rate_type=1,OK
+2017-05-30 09:15:26--工作人员基本信息－新增--SQL=INSERT INTO sys_users(USER_LOGIN,USER_PWD,USER_TYPE,USER_NAME,USER_SEX,USER_BIRTH,CERT_TYPE,CERT_ID,USER_ADDR,USER_DPT,USER_POS,USER_TEL,USER_MOBILE,CITY,RMRK,USER_STAT,ADD_DT,USER_APP) VALUES ('dd','dd',2,'dd','男','1995/1/1 0:00:00',1,'223','','dd','dd','','123','ZHONGSHAN','','USED',curtime(),''),OK
+2017-05-30 09:15:50--工作人员基本信息－新增--SQL=select * from sys_users where USER_LOGIN='dd',Err=登录帐号不能重复，请重新输入
+2017-05-30 09:15:59--工作人员基本信息－新增--SQL=INSERT INTO sys_users(USER_LOGIN,USER_PWD,USER_TYPE,USER_NAME,USER_SEX,USER_BIRTH,CERT_TYPE,CERT_ID,USER_ADDR,USER_DPT,USER_POS,USER_TEL,USER_MOBILE,CITY,RMRK,USER_STAT,ADD_DT,USER_APP) VALUES ('ddd','dd',2,'dd','男','1995/1/1 0:00:00',1,'','','dd','dd','','','ZHONGSHAN','','USED',curtime(),''),OK
+2017-05-30 09:16:51--工作人员基本信息－修改--SQL=UPDATE sys_users SET USER_PWD = 'dd',USER_SEX = '男',USER_BIRTH = '1995/1/1 0:00:00',CERT_TYPE = 1,CERT_ID = 'dfefd',USER_ADDR = '',USER_DPT = 'dd',USER_POS = 'dd',USER_TEL = 'dd',USER_MOBILE = '',RMRK = '' WHERE USER_ID=6,OK

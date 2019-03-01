@@ -1,0 +1,11 @@
+2018-01-07 20:28:17--工作网点基本信息－新增--SQL=编号net1-姓名充值网点,OK
+2018-01-07 20:28:38--工作网点基本信息－修改--SQL=编号2-姓名小票打印网点,OK
+2018-01-07 20:46:54--工作网点基本信息－新增--SQL=编号net1-姓名充值网点,OK
+2018-01-09 17:13:13--发会员卡--SQL=select * from base_ucard where STORE_CARD='0376001660000025',Err=Mysql.ReadData ErrMsg=Unknown column 'STORE_CARD' in 'where clause'
+2018-01-09 21:22:59--发会员卡--SQL=select * from base_ucard where STORE_CARD='0376001660000025',Err=Mysql.ReadData ErrMsg=Unknown column 'STORE_CARD' in 'where clause'
+2018-01-22 16:49:51--发会员卡--SQL=INSERT INTO base_ucard (user_name,USER_TEL,CERT_ID,user_card,card_pwd,pwd_crypt,oper_time,ADD_ID) VALUES (水三','','','3,'875801220035105','888888','','AEAD0E51367EDD7D','',curtime(),1),Err=Mysql.WriteData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '','','','3,'875801220035105','888888','','AEAD0E51367EDD7D','',curtime(),1)' at line 1
+2018-01-22 19:56:19--商户基本信息－新增--SQL=编号-商户名中山水产测试商户,OK
+2018-01-25 10:14:40--用户卡操作换卡--SQL=update base_ucard set user_card = '8866201220000210' where user_card = '8875801220035287',Err=
+2018-01-26 14:44:09--商户卡操作挂失卡--SQL=update mng_card set CARD_STAT = 'LOST',CHG_DT=curtime(),CHG_ID=1' where CARD_TYPE = 3 and STORE_CARD = '8866201220000293',Err=Mysql.WriteData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' where CARD_TYPE = 3 and STORE_CARD = '8866201220000293'' at line 1
+2018-01-26 14:56:44--用户卡操作换卡--SQL=update base_ucard set user_card = '8876002660039280',card_pwd='888888',pwd_crypt='BF00AF1CC02A6507',CHG_DT=curtime(),CHG_ID=1where user_card = '8875801220035295',Err=Mysql.WriteData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_card = '8875801220035295'' at line 1
+2018-01-26 14:57:34--用户卡操作换卡--SQL=update base_ucard set user_card = '8876002660039280',card_pwd='888888',pwd_crypt='888888',CHG_DT=curtime(),CHG_ID=1where user_card = '8875801220035295',Err=Mysql.WriteData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_card = '8875801220035295'' at line 1

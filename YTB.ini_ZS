@@ -1,0 +1,10 @@
+[Sys]
+Login=test
+Pwd=
+Code=84039999
+[Db]
+IP=39.108.14.229
+Port=3306
+Srv=zsmkt01
+Login=ztb
+Pwd=

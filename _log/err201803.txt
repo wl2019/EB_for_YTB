@@ -1,0 +1,1 @@
+2018-03-13 22:52:50--发商户卡--SQL=select STALL_ID from mng_card where CARD_TYPE=1and STORE_ID=14,Err=Mysql.ReadData ErrMsg=You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STORE_ID=14' at line 1
